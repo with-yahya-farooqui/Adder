@@ -1,3 +1,4 @@
+
 import java.util.*;
 class Adder 
 {
@@ -12,6 +13,7 @@ class Adder
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter length of array");
         int n=sc.nextInt();
+        array=new int[n];
         System.out.println("Enter elements of array.");
         for(int i=0;i<n;i++) array[i]=sc.nextInt();
         System.out.println("Enter target sum.");
@@ -23,7 +25,7 @@ class Adder
         {
             for(int j=0;j<array.length;j++)
             {
-                if(array[i]+array[j]==variable&&i!=j) {int[] arr=new int[0];arr[0]=array[i];arr[1]=array[j];return arr;}
+                if(array[i]+array[j]==variable&&i!=j) {int[] arr=new int[2];arr[0]=array[i];arr[1]=array[j];return arr;}
             }
         }
         return new int[0];
